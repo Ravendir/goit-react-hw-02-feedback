@@ -1,0 +1,12 @@
+.conteiner {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  background-image: url("https://www.024.by/wp-content/uploads/2020/10/ccimage-55e1d0464e51a414ea898675c6203f78083ed8e551517448722773-scaled.jpg");
+  background-size: cover;
+}
