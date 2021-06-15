@@ -4,9 +4,9 @@ import style from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <div className={style.boxBtn}>
-    {options.map((name, index) => (
+    {options.map((name, id) => (
       <button
-        key={index}
+        key={id}
         className={style.button}
         type="button"
         onClick={() => onLeaveFeedback({ name })}

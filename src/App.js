@@ -13,11 +13,12 @@ class App extends Component {
   };
 
   handleChange = (option) => {
-    const name = option.name;
+    const { name } = option;
     this.setState((prevState) => ({
       [name]: prevState[name] + 1,
     }));
   };
+
   countTotalFeedback() {
     const { good, neutral, bad } = this.state;
     const total = good + neutral + bad;
@@ -30,6 +31,7 @@ class App extends Component {
     const positiveFeedbackPercentage = (good * 100) / total;
     return Math.round(positiveFeedbackPercentage);
   }
+
   render() {
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
